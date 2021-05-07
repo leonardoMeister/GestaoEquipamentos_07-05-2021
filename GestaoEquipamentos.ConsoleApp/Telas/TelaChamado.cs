@@ -91,7 +91,7 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
 
             foreach (Chamado chamado in chamados)
             {
-                Console.WriteLine("{0,-10} | {1,-20} | | {2,-25} | {3,-30} | {4,-20}", chamado.id, chamado.equipamento.nome, chamado.solicitante.nome, chamado.titulo, chamado.DiasEmAberto);
+                Console.WriteLine("{0,-10} | {1,-20} | {2,-25} | {3,-30} | {4,-20}" , chamado.id, chamado.equipamento.nome, chamado.solicitante.nome, chamado.titulo, chamado.DiasEmAberto);
             }
         }
 
