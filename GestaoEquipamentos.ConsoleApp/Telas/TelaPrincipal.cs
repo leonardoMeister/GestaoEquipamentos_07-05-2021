@@ -8,14 +8,14 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
         private readonly ControladorChamado controladorChamado;
         ControladorEquipamento controladorEquipamento;
         private readonly TelaEquipamento telaEquipamento;
+        ControladorSolicitantes controladorSolicitantes;
 
-        public TelaPrincipal(ControladorEquipamento ctlrEquipamento,
-            TelaEquipamento tlEquipamento,
-            ControladorChamado ctlrChamado)
+        public TelaPrincipal(ControladorSolicitantes ctrlSolicitantes ,ControladorEquipamento ctlrEquipamento,TelaEquipamento tlEquipamento,    ControladorChamado ctlrChamado)
         {
             controladorEquipamento = ctlrEquipamento;
             telaEquipamento = tlEquipamento;
             controladorChamado = ctlrChamado;
+            controladorSolicitantes = ctrlSolicitantes;
         }
 
         public TelaBase ObterOpcao()
@@ -28,6 +28,8 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
 
                 Console.WriteLine("Digite 1 para o Cadastro de Equipamentos");
                 Console.WriteLine("Digite 2 para o Controle de Chamados");
+                Console.WriteLine("Digite 3 para o Controle de Solicitantes");
+
 
                 Console.WriteLine("Digite S para Sair");
 
@@ -39,6 +41,8 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
                 else if (opcao == "2")
                     telaSelecionada = new TelaChamado(telaEquipamento, controladorChamado);
 
+                else if (opcao == "3")
+                    telaSelecionada = new TelaSolicitantes(controladorSolicitantes);
 
                 else if (opcao.Equals("s", StringComparison.OrdinalIgnoreCase))
                     telaSelecionada = null;
@@ -50,7 +54,7 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
 
         private bool OpcaoInvalida(string opcao)
         {
-            if (opcao != "1" && opcao != "2" && opcao != "S" && opcao != "s")
+            if (opcao != "1"&& opcao !="3"  && opcao != "2" && opcao != "S" && opcao != "s")
             {
                 Console.WriteLine("Opção inválida");
                 Console.ReadLine();

@@ -46,8 +46,10 @@
     <Compile Include="ControladorBase.cs" />
     <Compile Include="Controladores\ControladorChamado.cs" />
     <Compile Include="Controladores\ControladorEquipamento.cs" />
+    <Compile Include="Controladores\ControladorSolicitantes.cs" />
     <Compile Include="Dominio\Chamado.cs" />
     <Compile Include="Dominio\Equipamento.cs" />
+    <Compile Include="Dominio\Solicitante.cs" />
     <Compile Include="GeradorId.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="Telas\TelaChamado.cs" />
     <Compile Include="Telas\TelaEquipamento.cs" />
     <Compile Include="Telas\TelaPrincipal.cs" />
+    <Compile Include="Telas\TelaSolicitantes.cs" />
     <Compile Include="Telas\TipoMensagem.cs" />
   </ItemGroup>
   <ItemGroup>

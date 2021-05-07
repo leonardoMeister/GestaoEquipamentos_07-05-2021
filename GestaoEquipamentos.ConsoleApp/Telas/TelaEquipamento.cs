@@ -7,8 +7,7 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
     public class TelaEquipamento : TelaBase
     {
         private ControladorEquipamento controladorEquipamento;
-        public TelaEquipamento(ControladorEquipamento controlador)
-            : base("Cadastro de Equipamentos")
+        public TelaEquipamento(ControladorEquipamento controlador)  : base("Cadastro de Equipamentos")
         {
             controladorEquipamento = controlador;
         }

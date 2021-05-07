@@ -98,8 +98,9 @@ namespace GestaoEquipamentos.ConsoleApp
 
             ControladorChamado controladorChamado = new ControladorChamado(controladorEquipamento);
 
-            TelaPrincipal telaPrincipal = new TelaPrincipal(
-                controladorEquipamento, telaEquipamento, controladorChamado);
+            ControladorSolicitantes controladorSolicitantes = new ControladorSolicitantes();
+
+            TelaPrincipal telaPrincipal = new TelaPrincipal(controladorSolicitantes,  controladorEquipamento, telaEquipamento, controladorChamado);
 
             while (true)
             {

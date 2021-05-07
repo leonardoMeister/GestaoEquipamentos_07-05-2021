@@ -5,8 +5,7 @@ namespace GestaoEquipamentos.ConsoleApp.Controladores
 {
     public class ControladorEquipamento : ControladorBase
     {
-        public string RegistrarEquipamento(int id, string nome, double preco,
-            string numeroSerie, DateTime dataFabricacao, string fabricante)
+        public string RegistrarEquipamento(int id, string nome, double preco,string numeroSerie, DateTime dataFabricacao, string fabricante)
         {
             Equipamento equipamento = null;
 
