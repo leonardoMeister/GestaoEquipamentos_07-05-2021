@@ -9,13 +9,15 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
         ControladorEquipamento controladorEquipamento;
         private readonly TelaEquipamento telaEquipamento;
         ControladorSolicitantes controladorSolicitantes;
+        public TelaSolicitantes telaSolicitantes;
 
-        public TelaPrincipal(ControladorSolicitantes ctrlSolicitantes ,ControladorEquipamento ctlrEquipamento,TelaEquipamento tlEquipamento,    ControladorChamado ctlrChamado)
+        public TelaPrincipal(ControladorSolicitantes ctrlSolicitantes ,ControladorEquipamento ctlrEquipamento, TelaSolicitantes tela1 ,TelaEquipamento tlEquipamento,    ControladorChamado ctlrChamado)
         {
             controladorEquipamento = ctlrEquipamento;
             telaEquipamento = tlEquipamento;
             controladorChamado = ctlrChamado;
             controladorSolicitantes = ctrlSolicitantes;
+            telaSolicitantes = tela1;
         }
 
         public TelaBase ObterOpcao()
@@ -39,7 +41,7 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
                     telaSelecionada = new TelaEquipamento(controladorEquipamento);
 
                 else if (opcao == "2")
-                    telaSelecionada = new TelaChamado(telaEquipamento, controladorChamado);
+                    telaSelecionada = new TelaChamado(telaSolicitantes, telaEquipamento, controladorChamado);
 
                 else if (opcao == "3")
                     telaSelecionada = new TelaSolicitantes(controladorSolicitantes);

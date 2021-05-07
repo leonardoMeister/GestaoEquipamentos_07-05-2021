@@ -8,12 +8,12 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
     {
         private TelaEquipamento telaEquipamento;
         private ControladorChamado controladorChamado;
-
-        public TelaChamado(TelaEquipamento tela, ControladorChamado controlador)
-            : base("Cadastro de Chamados")
+        private TelaSolicitantes telaSolicitantes;
+        public TelaChamado(TelaSolicitantes tela2, TelaEquipamento tela, ControladorChamado controlador)      : base("Cadastro de Chamados")
         {
             telaEquipamento = tela;
             controladorChamado = controlador;
+            telaSolicitantes = tela2;
         }
 
         public override void InserirNovoRegistro()
@@ -91,8 +91,7 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
 
             foreach (Chamado chamado in chamados)
             {
-                Console.WriteLine("{0,-10} | {1,-30} | {2,-55} | {3,-25}",
-                    chamado.id, chamado.equipamento.nome, chamado.titulo, chamado.DiasEmAberto);
+                Console.WriteLine("{0,-10} | {1,-20} | | {2,-25} | {3,-30} | {4,-20}", chamado.id, chamado.equipamento.nome, chamado.solicitante.nome, chamado.titulo, chamado.DiasEmAberto);
             }
         }
 
@@ -101,7 +100,7 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
         {
             Console.ForegroundColor = ConsoleColor.Red;
 
-            Console.WriteLine("{0,-10} | {1,-30} | {2,-55} | {3,-25}", "Id", "Equipamento", "Título", "Dias em Aberto");
+            Console.WriteLine("{0,-10} | {1,-20} | {2,-25} | {3,-30} | {4,-20}", "Id", "Equipamento", "Solicitante", "Título", "Dias em Aberto");
 
             Console.WriteLine("-------------------------------------------------------------------------------------------------------------------");
 
@@ -111,9 +110,17 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
         private bool GravarChamado(int idChamadoSelecionado)
         {
             telaEquipamento.VisualizarRegistros();
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------------------------\n");
+            telaSolicitantes.VisualizarRegistros();
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------------------------\n");
+
+
 
             Console.Write("Digite o Id do equipamento para manutenção: ");
             int idEquipamentoChamado = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Digite o Id do Solicitante do Chamado: ");
+            int idSolicitanteChamado = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Digite o titulo do chamado: ");
             string titulo = Console.ReadLine();
@@ -124,8 +131,7 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
             Console.Write("Digite a data de abertura do chamado: ");
             DateTime dataAbertura = Convert.ToDateTime(Console.ReadLine());
 
-            string resultadoValidacao = controladorChamado.
-                RegistrarChamado(idChamadoSelecionado, idEquipamentoChamado, titulo, descricao, dataAbertura);
+            string resultadoValidacao = controladorChamado.RegistrarChamado(idChamadoSelecionado, idEquipamentoChamado,idSolicitanteChamado, titulo, descricao, dataAbertura);
 
             bool conseguiuGravar = true;
 

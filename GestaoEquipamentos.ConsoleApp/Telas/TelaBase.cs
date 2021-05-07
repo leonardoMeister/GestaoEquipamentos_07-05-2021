@@ -71,7 +71,6 @@ namespace GestaoEquipamentos.ConsoleApp.Telas
 
         protected void ConfigurarTela(string subtitulo)
         {
-            Console.Clear();
 
             Console.WriteLine(titulo);
 

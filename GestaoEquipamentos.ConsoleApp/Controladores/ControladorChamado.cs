@@ -6,14 +6,15 @@ namespace GestaoEquipamentos.ConsoleApp.Controladores
     public class ControladorChamado : ControladorBase
     {
         private ControladorEquipamento controladorEquipamento;
+        public ControladorSolicitantes controladorSolicitantes;
 
-        public ControladorChamado(ControladorEquipamento controlador)
+        public ControladorChamado(ControladorEquipamento controlador, ControladorSolicitantes solicitante)
         {
             controladorEquipamento = controlador;
+            controladorSolicitantes = solicitante;
         }
 
-        public string RegistrarChamado(int id, int idEquipamentoChamado,
-            string titulo, string descricao, DateTime dataAbertura)
+        public string RegistrarChamado(int id, int idEquipamentoChamado, int idSolicitanteChamado, string titulo, string descricao, DateTime dataAbertura)
         {
             Chamado chamado = null;
 
@@ -31,6 +32,7 @@ namespace GestaoEquipamentos.ConsoleApp.Controladores
             }
 
             chamado.equipamento = controladorEquipamento.SelecionarEquipamentoPorId(idEquipamentoChamado);
+            chamado.solicitante = controladorSolicitantes.SelecionarSolicitantePorId(idSolicitanteChamado);
             chamado.titulo = titulo;
             chamado.descricao = descricao;
             chamado.dataAbertura = dataAbertura;

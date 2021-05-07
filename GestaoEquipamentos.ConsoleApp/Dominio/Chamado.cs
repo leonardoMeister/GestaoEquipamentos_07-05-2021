@@ -9,6 +9,7 @@ namespace GestaoEquipamentos.ConsoleApp.Dominio
         public string descricao;
         public DateTime dataAbertura;
         public Equipamento equipamento;
+        public Solicitante solicitante;
 
         public Chamado()
         {
@@ -37,7 +38,8 @@ namespace GestaoEquipamentos.ConsoleApp.Dominio
 
             if (string.IsNullOrEmpty(titulo))
                 resultadoValidacao += "O campo Nome é obrigatório \n";
-
+            if(solicitante is null)
+                resultadoValidacao += "Solicitante Inválido \n";
             if (string.IsNullOrEmpty(resultadoValidacao))
                 resultadoValidacao = "CHAMADO_VALIDO";
 

@@ -92,15 +92,18 @@ namespace GestaoEquipamentos.ConsoleApp
 
         static void Main(string[] args)
         {
+            ControladorSolicitantes controladorSolicitantes = new ControladorSolicitantes();
+
             ControladorEquipamento controladorEquipamento = new ControladorEquipamento();
 
             TelaEquipamento telaEquipamento = new TelaEquipamento(controladorEquipamento);
 
-            ControladorChamado controladorChamado = new ControladorChamado(controladorEquipamento);
+            TelaSolicitantes telaSolicitantes = new TelaSolicitantes(controladorSolicitantes);
 
-            ControladorSolicitantes controladorSolicitantes = new ControladorSolicitantes();
+            ControladorChamado controladorChamado = new ControladorChamado(controladorEquipamento, controladorSolicitantes);
 
-            TelaPrincipal telaPrincipal = new TelaPrincipal(controladorSolicitantes,  controladorEquipamento, telaEquipamento, controladorChamado);
+
+            TelaPrincipal telaPrincipal = new TelaPrincipal(controladorSolicitantes,  controladorEquipamento, telaSolicitantes, telaEquipamento, controladorChamado);
 
             while (true)
             {
