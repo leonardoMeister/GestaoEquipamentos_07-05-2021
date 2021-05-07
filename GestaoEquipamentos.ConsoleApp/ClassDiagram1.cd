@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GestaoEquipamentos.ConsoleApp.ControladorBase" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFBAAAAAAAEIBAAAAAAAAAAAAAAAAEAABAAAA=</HashCode>
+      <FileName>ControladorBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.GeradorId" Collapsed="true">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAACAAACAEAAAAAAAAA=</HashCode>
+      <FileName>GeradorId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Program" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorChamado" Collapsed="true">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAIAAEAA=</HashCode>
+      <FileName>Controladores\ControladorChamado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento" Collapsed="true">
+    <Position X="1" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controladores\ControladorEquipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Dominio.Chamado" Collapsed="true">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAIAAgQAAAAAAAAAABQAAAAAAEAAAAgA=</HashCode>
+      <FileName>Dominio\Chamado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="equipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Dominio.Equipamento" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAABAgAAAAAAAAAAAAQQAEABAAAAAAgA=</HashCode>
+      <FileName>Dominio\Equipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaBase" Collapsed="true">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAIAAIAAAAAAAAAAAAAICAAAAAAAAAAAFABAABA=</HashCode>
+      <FileName>Telas\TelaBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaChamado" Collapsed="true">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAoCCAAAAAAAAABBABAAAA=</HashCode>
+      <FileName>Telas\TelaChamado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaEquipamento" Collapsed="true">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAICCAAAAAAAIAEBABAAAA=</HashCode>
+      <FileName>Telas\TelaEquipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaPrincipal" Collapsed="true">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Telas\TelaPrincipal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="GestaoEquipamentos.ConsoleApp.Telas.TipoMensagem" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAACACAAAAAAAAAAAA=</HashCode>
+      <FileName>Telas\TipoMensagem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

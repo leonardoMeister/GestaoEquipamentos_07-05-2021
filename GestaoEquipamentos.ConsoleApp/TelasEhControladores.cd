@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaBase">
+    <Position X="10" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAAAAAIAAIAAAAAAAAQAAAAICAAAAAAAAAAABABAABA=</HashCode>
+      <FileName>Telas\TelaBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaChamado">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <AssociationLine Name="controladorEquipamento" Type="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.062" Y="6.021" />
+        <Point X="10.062" Y="6.532" />
+        <Point X="2.125" Y="6.532" />
+        <Point X="2.125" Y="5.002" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.193" Y="0.185" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAEAAAAAAAAAAAICCAAAAAAAIABBABIAAA=</HashCode>
+      <FileName>Telas\TelaChamado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controladorChamado" />
+      <Field Name="controladorEquipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaEquipamento">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <AssociationLine Name="controladorEquipamento" Type="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.938" Y="5.637" />
+        <Point X="11.938" Y="6.533" />
+        <Point X="2.438" Y="6.533" />
+        <Point X="2.438" Y="5.002" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.794" Y="0.183" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAICCAAAAAAAIAEBABAAAA=</HashCode>
+      <FileName>Telas\TelaEquipamento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controladorEquipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento">
+    <Position X="1.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABABAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controladores\ControladorEquipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorChamado">
+    <Position X="5.5" Y="3" Width="1.75" />
+    <AssociationLine Name="controladorEquipamento" Type="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.133" Y="0.173" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAIAAEAA=</HashCode>
+      <FileName>Controladores\ControladorChamado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controladorEquipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorBase">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAACFBAAAAAAAAgBAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Controladores\ControladorBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

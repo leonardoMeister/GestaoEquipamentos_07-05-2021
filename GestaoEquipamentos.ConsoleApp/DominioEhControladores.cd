@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GestaoEquipamentos.ConsoleApp.Dominio.Chamado">
+    <Position X="10.75" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="System.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="2.411" />
+        <Point X="10.25" Y="4.456" />
+        <Point X="11.5" Y="4.456" />
+        <Point X="11.5" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAIAAAQAAAAAAAAAABQAAAAAAEAAAAgA=</HashCode>
+      <FileName>Dominio\Chamado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="equipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Dominio.Equipamento">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="2.411" />
+        <Point X="10.25" Y="4.456" />
+        <Point X="8.5" Y="4.456" />
+        <Point X="8.5" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAABAgAAAAAAAAAAAAYQAEABAAAAAAgA=</HashCode>
+      <FileName>Dominio\Equipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorBase" HideInheritanceLine="true">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACFBAAAAAAAAgBAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Controladores\ControladorBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="registros" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorChamado">
+    <Position X="5" Y="5.25" Width="2.25" />
+    <InheritanceLine Type="GestaoEquipamentos.ConsoleApp.Controladores.ControladorBase" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="3.507" />
+        <Point X="4" Y="4.583" />
+        <Point X="6.062" Y="4.583" />
+        <Point X="6.062" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="controladorEquipamento" Type="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="6.625" />
+        <Point X="3" Y="6.625" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.084" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAIAAEAA=</HashCode>
+      <FileName>Controladores\ControladorChamado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controladorEquipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento">
+    <Position X="0.75" Y="5.25" Width="2.25" />
+    <InheritanceLine Type="GestaoEquipamentos.ConsoleApp.Controladores.ControladorBase" ManuallyRouted="true">
+      <Path>
+        <Point X="4" Y="3.507" />
+        <Point X="4" Y="4.571" />
+        <Point X="1.875" Y="4.571" />
+        <Point X="1.875" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ABABAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controladores\ControladorEquipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorChamado">
+    <Position X="1.25" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAIAAEAA=</HashCode>
+      <FileName>Controladores\ControladorChamado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controladorEquipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento">
+    <Position X="5.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABABAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controladores\ControladorEquipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.ControladorBase">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFBAAAAAAAEIBAAAAAAAAAAAAAAAAEAABAAAA=</HashCode>
+      <FileName>ControladorBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
